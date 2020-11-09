@@ -20,9 +20,9 @@ public class PharmacieApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Pharmacie p=new Pharmacie();
-        p.setEtat("OUVERTE");
-        p.setNom("Mame Diara");
-        p.setQuartier("Medina coura");
+        p.setEtat("FERMEE");
+        p.setNom("Oriental");
+        p.setQuartier("HLM3");
         p.setVille("Tambacounda");
         pharmacieRepos.save(p);
     }

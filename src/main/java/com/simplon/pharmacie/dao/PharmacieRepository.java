@@ -12,4 +12,7 @@ public interface PharmacieRepository extends JpaRepository<Pharmacie, Integer> {
     List<Pharmacie> findAll();
     List<Pharmacie> findAllByEtat(@Param("etat") String etat);
     Pharmacie findByNom(@Param("nom") String nom);
+    List<Pharmacie> findByVilleAndEtat(@Param("ville") String ville, @Param("etat") String etat);
+    List<Pharmacie> findByVille(@Param("ville") String ville);
+
 }
