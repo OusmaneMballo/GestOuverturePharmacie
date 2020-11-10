@@ -14,16 +14,16 @@ public class PharmacieApplication implements CommandLineRunner {
         SpringApplication.run(PharmacieApplication.class, args);
     }
 
-    @Autowired
-    private PharmacieRepository pharmacieRepos;
+  /*  @Autowired
+    private PharmacieRepository pharmacieRepos;*/
 
     @Override
     public void run(String... args) throws Exception {
-        Pharmacie p=new Pharmacie();
+       /* Pharmacie p=new Pharmacie();
         p.setEtat("FERMEE");
         p.setNom("Oriental");
         p.setQuartier("HLM3");
         p.setVille("Tambacounda");
-        pharmacieRepos.save(p);
+        pharmacieRepos.save(p);*/
     }
 }
